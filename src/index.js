@@ -17,11 +17,11 @@ const SORT_OPTIONS = [
 // const FILTERS = filters;
 
 const updatePage = (fetchUrl) => {
+    removeGaleryContent();
+    renderLoading();
     return fetchData(fetchUrl)
         .then(
             ({ results, previous: previousUrl, next: nextUrl }) => {
-                removeGaleryContent();
-                renderLoading();
                 updatePreviousAndNextButtons(previousUrl, nextUrl);
 
                 const pkmnUrlList = results.map(pkmn => pkmn.url)
