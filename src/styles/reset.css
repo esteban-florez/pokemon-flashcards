@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:link,
+a:active,
+a:hover {
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    user-select: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}

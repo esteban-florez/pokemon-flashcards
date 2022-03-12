@@ -1,0 +1,170 @@
+{
+    "filters": {
+        "generation": [
+            {
+                "id": 1,
+                "title": "Generation I"
+            },
+            {
+                "id": 2,
+                "title": "Generation II"
+            },
+            {
+                "id": 3,
+                "title": "Generation III"
+            },
+            {
+                "id": 4,
+                "title": "Generation IV"
+            },
+            {
+                "id": 5,
+                "title": "Generation V"
+            },
+            {
+                "id": 6,
+                "title": "Generation VI"
+            },
+            {
+                "id": 7,
+                "title": "Generation VII"
+            },
+            {
+                "id": 8,
+                "title": "Generation VIII"
+            }
+        ],
+        "type": [
+            {
+                "id": 1,
+                "title": "normal"
+            },
+            {
+                "id": 2,
+                "title": "fighting"
+            },
+            {
+                "id": 3,
+                "title": "flying"
+            },
+            {
+                "id": 4,
+                "title": "poison"
+            },
+            {
+                "id": 5,
+                "title": "ground"
+            },
+            {
+                "id": 6,
+                "title": "rock"
+            },
+            {
+                "id": 7,
+                "title": "bug"
+            },
+            {
+                "id": 8,
+                "title": "ghost"
+            },
+            {
+                "id": 9,
+                "title": "steel"
+            },
+            {
+                "id": 10,
+                "title": "fire"
+            },
+            {
+                "id": 11,
+                "title": "water"
+            },
+            {
+                "id": 12,
+                "title": "grass"
+            },
+            {
+                "id": 13,
+                "title": "electric"
+            },
+            {
+                "id": 14,
+                "title": "psychic"
+            },
+            {
+                "id": 15,
+                "title": "ice"
+            },
+            {
+                "id": 16,
+                "title": "dragon"
+            },
+            {
+                "id": 17,
+                "title": "dark"
+            },
+            {
+                "id": 18,
+                "title": "fairy"
+            }
+        ],
+        "egg-grop": [
+            {
+                "id": 1,
+                "title": "Monster"
+            },
+            {
+                "id": 2,
+                "title": "Water 1"
+            },
+            {
+                "id": 3,
+                "title": "Bug"
+            },
+            {
+                "id": 4,
+                "title": "Flying"
+            },
+            {
+                "id": 5,
+                "title": "Ground"
+            },
+            {
+                "id": 6,
+                "title": "Fairy"
+            },
+            {
+                "id": 7,
+                "title": "Plant"
+            },
+            {
+                "id": 8,
+                "title": "Human-Like"
+            },
+            {
+                "id": 9,
+                "title": "Water 3"
+            },
+            {
+                "id": 10,
+                "title": "Mineral"
+            },
+            {
+                "id": 11,
+                "title": "Amorphous"
+            },
+            {
+                "id": 12,
+                "title": "Water 2"
+            },
+            {
+                "id": 14,
+                "title": "Dragon"
+            },
+            {
+                "id": 15,
+                "title": "Undiscovered"
+            }
+        ]
+    }
+}

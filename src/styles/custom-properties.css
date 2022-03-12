@@ -1,0 +1,19 @@
+:root {
+    --cg-blue: #0075a2;
+    --powder-blue: #a6d8d4;
+    --cambridge-blue: #8eaf9d;
+    --beau-blue: #b9cdda;
+    --lavender-web: #d7dae5;
+    --amaranth: #DB324D;
+    --spanish-violet: #55286F;
+    --grey: #5F6A6A;
+    --light-grey: #F7F7F7;
+    --white: #FFF;
+    --black: #000;
+    --lg: 18px;
+    --md: 16px;
+    --sm: 14px;
+    --bold: 700;
+    --medium: 500;
+    --light: 300;
+}

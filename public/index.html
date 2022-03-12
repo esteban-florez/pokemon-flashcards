@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Flashcards</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Pokemon Flashcards</h1>
+        <input class="header__search-input" type="text" list="pokemonSearchList" placeholder="Search a Pokemon...">
+        <div class="header__sort-container">
+            <button id="sortButton" class="header__sort-button" type="button">
+                Sort
+                <img class="header__sort-button-arrow" src="../src/assets/icons/arrow.svg" alt="Arrow icon">
+            </button>
+        </div>
+        <div class="header__about-container">
+            <span class="header__about" role="link">About</span>
+        </div>
+    </header>
+    <div class="content-container">
+        <main class="galery-container">
+            <div id="previousButton" class="galery-container__previous">&lt;</div>
+            <div id="galeryGrid" class="galery-container__grid">
+            </div>
+            <div id="nextButton" class="galery-container__next">&gt;</div>
+        </main>
+        <aside class="sidebar">
+            <h2 class="sidebar__title">Categories</h2>
+            <div class="sidebar__menu-container">
+                <h3 id="generationButton" class="sidebar__menu-title">Generation</h3>
+                <ul class="sidebar__menu--toggled">
+                    <li class="sidebar__menu-item" role="button">Gen I</li>
+                    <li class="sidebar__menu-item" role="button">Gen II</li>
+                    <li class="sidebar__menu-item" role="button">Gen III</li>
+                    <li class="sidebar__menu-item" role="button">Gen IV</li>
+                    <li class="sidebar__menu-item" role="button">Gen V</li>
+                    <li class="sidebar__menu-item" role="button">Gen VI</li>
+                    <li class="sidebar__menu-item" role="button">Gen VII</li>
+                    <li class="sidebar__menu-item" role="button">Gen VIII</li>
+                </ul>
+            </div>
+            <div class="sidebar__menu-container">
+                <h3 id="typeButton" class="sidebar__menu-title">Type</h3>
+                <ul class="sidebar__menu--toggled">
+                    <li class="sidebar__menu-item" role="button">Normal</li>
+                    <li class="sidebar__menu-item" role="button">Fighting</li>
+                    <li class="sidebar__menu-item" role="button">Flying</li>
+                    <li class="sidebar__menu-item" role="button">Poison</li>
+                    <li class="sidebar__menu-item" role="button">Ground</li>
+                    <li class="sidebar__menu-item" role="button">Rock</li>
+                    <li class="sidebar__menu-item" role="button">Bug</li>
+                    <li class="sidebar__menu-item" role="button">Ghost</li>
+                    <li class="sidebar__menu-item" role="button">Steel</li>
+                    <li class="sidebar__menu-item" role="button">Fire</li>
+                    <li class="sidebar__menu-item" role="button">Water</li>
+                    <li class="sidebar__menu-item" role="button">Grass</li>
+                    <li class="sidebar__menu-item" role="button">Electric</li>
+                    <li class="sidebar__menu-item" role="button">Psychic</li>
+                    <li class="sidebar__menu-item" role="button">Ice</li>
+                    <li class="sidebar__menu-item" role="button">Dragon</li>
+                    <li class="sidebar__menu-item" role="button">Dark</li>
+                    <li class="sidebar__menu-item" role="button">Fairy</li>
+                </ul>
+            </div>
+            <div class="sidebar__menu-container">
+                <h3 id="eggGroupButton" class="sidebar__menu-title" >Egg Group</h3>
+                <ul class="sidebar__menu--toggled">
+                    <li class="sidebar__menu-item">Monster</li>
+                    <li class="sidebar__menu-item">Water 1</li>
+                    <li class="sidebar__menu-item">Bug</li>
+                    <li class="sidebar__menu-item">Flying</li>
+                    <li class="sidebar__menu-item">Field</li>
+                    <li class="sidebar__menu-item">Fairy</li>
+                    <li class="sidebar__menu-item">Grass</li>
+                    <li class="sidebar__menu-item">Human-Like</li>
+                    <li class="sidebar__menu-item">Water 3</li>
+                    <li class="sidebar__menu-item">Mineral</li>
+                    <li class="sidebar__menu-item">Amorphous</li>
+                    <li class="sidebar__menu-item">Water 2</li>
+                    <li class="sidebar__menu-item">Dragon</li>
+                    <li class="sidebar__menu-item">Undiscovered</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2022 Esteban Florez</p>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/esteban-florez/pokemon-flashcards">Repository of this project</a>
+        </div>
+    </footer>
+</body>
+</html>
