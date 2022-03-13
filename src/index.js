@@ -24,7 +24,7 @@ const updatePage = (fetchUrl) => {
         .then(({ results, previous: previousUrl, next: nextUrl }) => {
             updatePreviousAndNextButtons(previousUrl, nextUrl);
             const pkmnUrlList = results.map(pkmn => pkmn.url);
-            let pkmnPromises = pkmnUrlList.map(pkmnUrl => fetchData(pkmnUrl + "asd"));
+            let pkmnPromises = pkmnUrlList.map(pkmnUrl => fetchData(pkmnUrl));
             return Promise.all(pkmnPromises);
         })
         .then(pkmnsData => {
