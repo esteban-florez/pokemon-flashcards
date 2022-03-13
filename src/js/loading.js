@@ -5,7 +5,6 @@ const galeryGridElement = document.querySelector('#galeryGrid');
 
 const renderLoading = () => {
     updatePreviousAndNextButtons(null, null);
-    debugger;
     const loadingElement = document.createElement('div');
     loadingElement.id = loadingId;
     loadingElement.classList.add('galery-container__loading');

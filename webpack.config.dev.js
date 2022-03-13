@@ -17,6 +17,7 @@ module.exports = {
             '@sorting': path.resolve(__dirname, 'src/js/sorting'),
             '@galery': path.resolve(__dirname, 'src/js/galery'),
             '@dom': path.resolve(__dirname, 'src/js/dom'),
+            '@errors': path.resolve(__dirname, 'src/js/errors'),
         }
     },
     output: {

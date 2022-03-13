@@ -14,7 +14,6 @@ const updateButtonEvent = (url, buttonElement) => {
         buttonElement.onclick = null;
     } else {
         buttonElement.onclick = () => {
-            debugger;
             removeGaleryContent();
             renderLoading();
             updatePage(url);    

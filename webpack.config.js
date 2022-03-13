@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+// const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
+// const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -18,6 +18,7 @@ module.exports = {
             '@sorting': path.resolve(__dirname, 'src/js/sorting'),
             '@galery': path.resolve(__dirname, 'src/js/galery'),
             '@dom': path.resolve(__dirname, 'src/js/dom'),
+            '@errors': path.resolve(__dirname, 'src/js/errors'),
         }
     },
     output: {
