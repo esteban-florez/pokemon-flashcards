@@ -21,23 +21,28 @@ const updatePage = (fetchUrl) => {
     removeGaleryContent();
     renderLoading();
     fetchData(fetchUrl)
-        .then(({ results, previous: previousUrl, next: nextUrl }) => {
-            updatePreviousAndNextButtons(previousUrl, nextUrl);
-            const pkmnUrlList = results.map(pkmn => pkmn.url);
-            let pkmnPromises = pkmnUrlList.map(pkmnUrl => fetchData(pkmnUrl));
-            return Promise.all(pkmnPromises);
-        })
-        .then(pkmnsData => {
-                let galeryItems = pkmnsData.map(({ id, name, sprites }) => {
-                    let spriteUrl =  sprites.other['official-artwork'].front_default;
-                    let galeryItem = makeGaleryItem(id, name, spriteUrl);
-                    return galeryItem;
-                })
-            return galeryItems;
+    .then(({ results, previous: previousUrl, next: nextUrl }) => {
+        setUrls(previousUrl, nextUrl);
+        const pkmnUrlList = results.map(pkmn => pkmn.url);
+        let pkmnPromises = pkmnUrlList.map(pkmnUrl => fetchData(pkmnUrl));
+        return Promise.all([...pkmnPromises, previousUrl, nextUrl]);
+    })
+    .then(pkmnsData => {
+        const nextUrl = pkmnsData.pop();
+        const previousUrl = pkmnsData.pop();
+        let galeryItems = pkmnsData.map(({ id, name, sprites }) => {
+                let spriteUrl =  sprites.other['official-artwork'].front_default;
+                let galeryItem = makeGaleryItem(id, name, spriteUrl);
+                return galeryItem;
+            })
+            return [...galeryItems, previousUrl, nextUrl];
         })
         .then(galeryItems => {
+            const nextUrl = galeryItems.pop()
+            const previousUrl = galeryItems.pop();
             removeLoading();
             renderGalery(galeryItems);
+            updatePreviousAndNextButtons(previousUrl, nextUrl);
         })
         .catch(( [errorMsg, errorUrl] ) => {
             (errorUrl.includes('limit')) 
@@ -45,9 +50,9 @@ const updatePage = (fetchUrl) => {
             : pokemonsFetchErrorHandler(fetchUrl);
             console.log(errorMsg);
         });
-}
-
-const initApp = () => {
+    }
+    
+    const initApp = () => {
     updatePage(`${API}pokemon?limit=${FETCH_LIMIT}`);
 }
 
