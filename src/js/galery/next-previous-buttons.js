@@ -15,7 +15,8 @@ const updateButtonEvent = (url, buttonElement) => {
     } else {
         buttonElement.onclick = () => {
             removeGaleryContent();
-            renderLoading();
+            updatePreviousAndNextButtons(null, null);
+            renderLoading('galeryGrid');
             updatePage(url);    
         }
     }

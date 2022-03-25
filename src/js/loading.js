@@ -1,16 +1,15 @@
-import { updatePreviousAndNextButtons } from "./galery/next-previous-buttons";
+import { updatePreviousAndNextButtons } from "@galery/next-previous-buttons";
 
 const loadingId = 'loading';
-const galeryGridElement = document.querySelector('#galeryGrid');
 
-const renderLoading = () => {
-    updatePreviousAndNextButtons(null, null);
+const renderLoading = (parentElementId) => {
     const loadingElement = document.createElement('div');
     loadingElement.id = loadingId;
     loadingElement.classList.add('galery-container__loading');
     loadingElement.innerText = 'Loading...'
 
-    galeryGridElement.appendChild(loadingElement);
+    const parentElement = document.querySelector(`#${parentElementId}`);
+    parentElement.appendChild(loadingElement);
 }
 
 const removeLoading = () => {
